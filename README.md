@@ -8,8 +8,8 @@ As part of the [Building responsive layouts](https://www.frontendmentor.io/learn
 ![Screenshot of desktop version](images/screenshot.png)
 
 ### Links
-- Solution URL: [Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/recipe-page-Jdvqz8aFNJ)
-- Live Site URL: [GitHub Page](https://presidenttree94.github.io/recipe-page/)
+- Solution URL: [Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/product-preview-card-component-504WGtIZmX)
+- Live Site URL: [GitHub Page](https://presidenttree94.github.io/product-preview-card-component/)
 
 ## Author
 - GitHub Profile: [PresidentTree94](https://github.com/PresidentTree94)
