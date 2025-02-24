@@ -1,5 +1,5 @@
 # Product Preview Card Component
-This is a solution to the [Product Review Card Component] challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Product Review Card Component](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa) challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Overview
 As part of the [Building responsive layouts](https://www.frontendmentor.io/learning-paths) learning pathway, it is the first of four challenges users complete to finish the unit.
