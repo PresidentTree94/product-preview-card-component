@@ -5,6 +5,7 @@
   --gunmetal: rgb(28, 35, 43);
   --viridian: rgb(60, 128, 103);
   --brunswickGreen: rgb(27, 65, 51);
+  --mainPadding: 1rem;
 }
 
 * {
@@ -22,7 +23,7 @@ body {
 }
 
 .container {
-  max-width: min(100%, 38rem); /*608px*/
+  max-width: min(100%, calc(36rem + (var(--mainPadding) * 2))); /*576px + 1rem round padding*/
   min-height: 100vh; /*Fallback for svh*/
   min-height: 100svh;
   margin: 0 auto;
@@ -33,7 +34,7 @@ body {
 }
 
 main {
-  padding: 0 1rem;
+  padding: var(--mainPadding);
   animation: fadeDown 1s ease forwards;
 }
 
