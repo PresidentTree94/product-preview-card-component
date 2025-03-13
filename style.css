@@ -5,7 +5,6 @@
   --gunmetal: rgb(28, 35, 43);
   --viridian: rgb(60, 128, 103);
   --brunswickGreen: rgb(27, 65, 51);
-  --mainPadding: 1rem;
 }
 
 * {
@@ -23,7 +22,7 @@ body {
 }
 
 .container {
-  max-width: min(100%, calc(36rem + (var(--mainPadding) * 2))); /*576px + 1rem round padding*/
+  max-width: min(100%, 39rem);
   min-height: 100vh; /*Fallback for svh*/
   min-height: 100svh;
   margin: 0 auto;
@@ -34,7 +33,7 @@ body {
 }
 
 main {
-  padding: var(--mainPadding);
+  padding: 1rem;
   animation: fadeDown 1s ease forwards;
 }
 
@@ -53,10 +52,11 @@ picture img {
   width: 100%;
   border-radius: 0.625rem 0 0 0.625rem; /*10px*/
   vertical-align: middle;
+  filter: brightness(90%);
 }
 
 article {
-  padding: 1.5rem; /*24px*/
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -150,7 +150,7 @@ a:hover {
   text-decoration: underline;
 }
 
-@media (width < 35.875rem) {
+@media (width < 37.875rem) { /*606px*/
   section {
     flex-direction: column;
   }
