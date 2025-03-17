@@ -7,6 +7,13 @@
   --brunswickGreen: rgb(27, 65, 51);
 }
 
+.altMode {
+  --linen: rgb(192, 185, 177);
+  --white: rgb(28, 35, 43);
+  --gunmetal: rgb(255, 255, 255);
+  --brunswickGreen: rgb(85, 153, 128);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -30,6 +37,14 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+}
+
+#toggle {
+  background-color: var(--viridian);
+}
+
+svg {
+  fill: var(--white);
 }
 
 main {
@@ -117,6 +132,10 @@ button {
   padding: 1rem 0;
   font-weight: 600;
   transition: transform 0.3s ease;
+}
+
+.altMode button {
+  color: var(--gunmetal);
 }
 
 button img {
