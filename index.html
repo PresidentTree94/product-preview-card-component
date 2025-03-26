@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://presidenttree94.github.io/shared-code/base-style.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://presidenttree94.github.io/shared-code/alt-mode/toggle-style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script defer src="https://presidenttree94.github.io/shared-code/alt-mode/toggle.js"></script>
+  <title>Frontend Mentor | Product preview card component</title>
+</head>
+<body>
+  <div class="container">
+    <div id="toggle" data-default="sun"></div>
+    <main>
+      <section>
+        <picture>
+          <source srcset="images/image-product-mobile.jpg" media="(width < 37.875rem)" alt="Product">
+          <img src="images/image-product-desktop.jpg" alt="Product">
+        </picture>
+        <article>
+          <span>Perfume</span>
+          <h1>Gabrielle Essence Eau De Parfum</h1>
+          <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+          <div class="bottom">
+            <span>$149.99</span>
+            <span>$169.99</span>
+          </div>
+          <button><img src="images/icon-cart.svg" alt="Cart"> Add to Cart</button>
+        </article>
+      </section>
+      <footer>
+        <p>Challenge by <a href="https://www.frontendmentor.io/solutions/product-preview-card-component-504WGtIZmX" target="_blank">Frontend Mentor</a> and coded by <a href="https://www.frontendmentor.io/profile/PresidentTree94" target="_blank">PresidentTree94</a>.</p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

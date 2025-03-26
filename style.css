@@ -1,0 +1,161 @@
+:root {
+  --linen: rgb(242, 235, 227);
+  --white: rgb(255, 255, 255);
+  --slateGray: rgb(108, 114, 137);
+  --gunmetal: rgb(28, 35, 43);
+  --viridian: rgb(60, 128, 103);
+  --brunswickGreen: rgb(27, 65, 51);
+}
+
+.altMode {
+  --linen: rgb(192, 185, 177);
+  --white: rgb(28, 35, 43);
+  --gunmetal: rgb(255, 255, 255);
+  --brunswickGreen: rgb(85, 153, 128);
+}
+
+body {
+  font-family: "Montserrat", serif;
+  font-size: 0.875rem; /*14px*/
+  background-color: var(--linen);
+  color: var(--slateGray);
+  font-weight: 500;
+}
+
+.container {
+  max-width: min(100%, 39rem); /*624px*/
+  min-height: 100vh; /*Fallback for svh*/
+  min-height: 100svh;
+  align-items: center;
+}
+
+#toggle {
+  background-color: var(--viridian);
+}
+
+svg {
+  fill: var(--white);
+}
+
+main {
+  padding: 1rem;
+  opacity: 0;
+  animation-name: fadeDown;
+}
+
+section {
+  background-color: var(--white);
+  border-radius: 0.625rem; /*10px*/
+  display: flex;
+}
+
+picture img {
+  width: 100%;
+  border-radius: 0.625rem 0 0 0.625rem; /*10px*/
+  vertical-align: middle;
+  filter: brightness(90%);
+}
+
+article {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+picture, article {
+  width: 50%;
+}
+
+article > span {
+  text-transform: uppercase;
+  letter-spacing: 0.3125rem; /*5px*/
+  font-size: 0.75rem; /*12px*/
+}
+
+h1 {
+  color: var(--gunmetal);
+  font-family: "Fraunces", serif;
+  font-size: 2rem; /*32px*/
+  line-height: 100%;
+}
+
+article p {
+  line-height: 165%;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem; /*20px*/
+}
+
+.bottom span:first-of-type {
+  color: var(--viridian);
+  font-family: "Fraunces", serif;
+  font-size: 2rem; /*32px*/
+  font-weight: 700;
+}
+
+.bottom span:last-of-type {
+  text-decoration: line-through;
+  font-size: 0.75rem; /*12px*/
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  background-color: var(--viridian);
+  color: var(--white);
+  border-radius: 0.5rem; /*8px*/
+  font-size: inherit;
+  font-family: inherit;
+  padding: 1rem 0;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+.altMode button {
+  color: var(--gunmetal);
+}
+
+button img {
+  height: 1rem;
+  width: auto;
+  margin-right: 0.75rem; /*12px*/
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--brunswickGreen);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+footer {
+  text-align: center;
+}
+
+a {
+  color: var(--viridian);
+}
+
+@media (width < 37.875rem) { /*606px*/
+  section {
+    flex-direction: column;
+  }
+
+  picture, article {
+    width: 100%;
+  }
+
+  picture img {
+    border-radius: 0.625rem 0.625rem 0 0; /*10px*/
+  }
+}
